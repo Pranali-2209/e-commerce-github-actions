@@ -1,0 +1,14 @@
+#Goal : create a sample hello workflow
+name: Test
+
+#run time of workflow
+on: push
+
+#what workflow does
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Display testing text
+        run: echo "This is a sample workflow for testing purpose"
+      
